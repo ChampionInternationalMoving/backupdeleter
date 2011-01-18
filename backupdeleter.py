@@ -99,7 +99,6 @@ for config in configs:
             if (datetime.now() - datetime.fromtimestamp(os.stat(match).st_mtime)).days >= config['length']:
                 log.info('Removing "%s".', dirfile)
                 try:
-                    pass
-                    #os.remove(match)
+                    os.remove(match)
                 except IOError:
                     log.error('Could not remove file "%s".', dirfile)
