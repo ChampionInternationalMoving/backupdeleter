@@ -33,6 +33,12 @@ logging.basicConfig(filename='backupdeleter.log', format='%(asctime)s %(name)s %
 log = logging.getLogger('backupdeleter.py')
 
 
+#Python version check
+if sys.version_info < (2, 7, 1):
+    log.error('Python version must be 2.7.1 or newer.')
+    sys.exit(1)
+
+
 #Parse configuration file
 log.debug('sys.argv == %s', repr(sys.argv))
 if len(sys.argv) != 2:
