@@ -11,8 +11,7 @@ that you only keep the desired amount of backups necessary.
 Prerequisites
 -------------
 
-1.  Python 2.7.1+
-    http://python.org/
+1.  Python 2.7.1+ - [http://python.org/](http://python.org)
 
     The python runtime is required for executing this script. A minimum of
     version 2.7.1 is needed for the pattern matching libraries.
