@@ -20,11 +20,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 '''
 
-from datetime import datetime
-import fnmatch
-import logging
-import os
 import sys
+import logging
 
 
 #Configure logging
@@ -37,6 +34,11 @@ log = logging.getLogger('backupdeleter.py')
 if sys.version_info < (2, 7, 1):
     log.error('Python version must be 2.7.1 or newer.')
     sys.exit(1)
+
+
+from datetime import datetime
+import fnmatch
+import os
 
 
 #Parse configuration file
