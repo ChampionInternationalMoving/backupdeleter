@@ -1,0 +1,13 @@
+# backupdeleter.py example configuration file
+#
+# This configuration file will allow you to specify which files will be deleted
+# based off of sets of path, pattern, and age.
+
+# Delete anything in this directory older than 14 days
+C:\Backups\, *, 14
+
+# Use a pattern to choose only specific files
+C:\Database_Backups\, MyDatabase_*.bak, 7
+
+# You can use combinations of both '*' and '?' in your patterns.
+C:\Database_Backups\, MyDatabase?_*.bak, 10
