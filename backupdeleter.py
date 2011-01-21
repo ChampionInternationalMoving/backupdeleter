@@ -4,6 +4,12 @@
 Simple script to automatically delete old backups.
 '''
 
+__version__    = '1.0.0'
+__copyright__  = 'Copyright 2011 Champion International Moving, Ltd.'
+__author__     = 'Jake Wharton'
+__maintainer__ = 'Jake Wharton'
+__email__      = 'jake@champmove.com'
+__status__     = 'Production'
 __license__ = '''
 Copyright 2011 Champion International Moving, Ltd.
 
@@ -28,6 +34,7 @@ import logging
 #change level to DEBUG for more info, WARN for less
 logging.basicConfig(filename='backupdeleter.log', format='%(asctime)s %(name)s %(levelname)s %(message)s', level=logging.INFO)
 log = logging.getLogger('backupdeleter.py')
+log.debug('Version %s', __version__)
 
 
 #Python version check
